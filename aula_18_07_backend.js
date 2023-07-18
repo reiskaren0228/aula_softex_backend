@@ -1,2 +1,9 @@
-console.log("Aula para treinar...");
-console.log("Aula Backend Softex 2023")
+console.log("======== MENU ========");
+console.log("1 - Listar Clientes");
+console.log("2 - Cadastrar Cliente");
+console.log("3 - Editar Cliente");
+console.log("4 - Remover Cliente");
+console.log("5 - Sair do Sistema");
+console.log("======================");
+console.log("Opçao: ___");
+console.log("======================");
