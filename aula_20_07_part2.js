@@ -46,13 +46,41 @@
 //     }num()
 
 
-function tipo(){
-        //tipo =true;
-        tipo = "nome";
+// function tipo(){
+//         //tipo = true;
+//         tipo = "nome";
 
-        if(typeof tipo === 'boolean'){
-            console.log(`A function tipo ${tipo} é um boolean`);
-        }else{
-            console.log(`A function tipo ${tipo} não é boolean`);;
-        }
-    }tipo();
+//         if(typeof tipo === 'boolean'){
+//             console.log(`A function tipo ${tipo} é um boolean`);
+//         }else{
+//             console.log(`A function tipo ${tipo} não é boolean`);;
+//         }
+//     }tipo();
+
+// function num(){
+//     num=-10;
+//     if(num==0){
+//         console.log(`O ${num} é igual a zero`);
+//     } else if (num > 0) {
+//         console.log(`O ${num} é positivo`);
+//     }else {
+//         console.log(`O ${num} é negativo`);
+//     }
+// }num()
+
+
+function  num(){
+    num=10;
+
+    if(num % 2===0){
+        console.log(`O ${num} é divisivel por 2`);
+    }
+}
+
+function nome(){
+    nome="karen";
+    nome=true;
+    nome=10;
+
+    if(typeof nome === "boolean")
+}
