@@ -174,7 +174,7 @@ const readline = require("readline-sync");
 
 //     case 'soma':
 
-//         let n1 = parseFloat(readline.question("Digite um número: "));
+//         let n1 = c("Digite um número: "));
 //         let n2 = parseFloat(readline.question("Digite outro número: "));
 
 //         soma= n1+n2;
