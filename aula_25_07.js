@@ -2,8 +2,8 @@ const readline = require("readline-sync");
 
 //Permissão para dirigir
 function dirigir(drive) {
-    
-    let drive = readline.question("Digite sua idade: ");
+
+    var drive = readline.question("Digite sua idade: ");
 
    if (drive < 16) {
      return "Você não pode dirirgir!!!";
