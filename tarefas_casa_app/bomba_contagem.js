@@ -13,4 +13,4 @@ function contagem_bomba(segundos) {
   }
   
   const contagem_bomba_explodir = parseInt(prompt("Informe quantos segundos você quer para explodir a bomba: "));
-  contagem_bomba(contagem_bomba_explodir );
+  contagem_bomba(contagem_bomba_explodir);
