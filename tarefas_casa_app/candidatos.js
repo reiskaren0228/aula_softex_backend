@@ -35,7 +35,7 @@ function mostrar_res(candidatos) {
   }
 
   console.log(`Votos em branco: ${candidatos['branco']}`);
-  console.log(`\nCandidato Eleito: Candidato ${eleito_candidato} com ${candidatos[eleito_candidato]} votos.`);
+  console.log(`\n--> O Candidato Eleito: Candidato ${eleito_candidato} com ${candidatos[eleito_candidato]} votos.`);
 }
 
 function eleicao() {
