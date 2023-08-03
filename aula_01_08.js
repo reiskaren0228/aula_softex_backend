@@ -72,10 +72,11 @@
 //Atv 10
 
 let arrays = [1, 2, 3, 4];
-let strings = "casa";
+// let arrays = "casa";
 
 function parametros() {
-    if(typeof arrays === Array) {
+   
+    if(typeof arrays) {
         console.log(`É um array válido`);
     }else {
         console.log(`Não é um array válido`);
