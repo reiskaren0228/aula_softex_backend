@@ -1,5 +1,5 @@
 //Instalar módulo readline-sync
-//npm install-sync
+//npm install readline-sync
 
 // const readline = require("readline-sync");
 
