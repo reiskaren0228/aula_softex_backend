@@ -75,11 +75,11 @@ let arrays = [1, 2, 3, 4];
 // let arrays = "casa";
 
 function parametros() {
-   
-    if(typeof arrays) {
+    if (Array.isArray(arrays)) {
         console.log(`É um array válido`);
-    }else {
+    } else {
         console.log(`Não é um array válido`);
     }
+}
 
-} parametros();
+parametros();
