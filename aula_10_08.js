@@ -1,5 +1,5 @@
-const readline = require("readline-sync");
-//
+const readline = require('readline-sync');
+
 // function exibirSaudacao(nome, saudacao='Boa tarde, Seja Bem Vinda(o)!!') {
 //     // nome = "Karen"
 //     console.log(`${saudacao}, ${nome}`);
@@ -20,38 +20,51 @@ const readline = require("readline-sync");
 // }
 // saudacao();
 
-//ATv 2 ?
+//ATv 2 
 
 // function calculadora(num1, num2, operacao) {
-//     num1 = parseInt(readline.question("Informe um número: "))
-//     num2 = parseInt(readline.question("Informe outro número: "))
-//     opcao = parseInt(readline.question("Escolha a opção da operação 1-Soma / 2 - Subtração / 3 - Multiplicação / 4 - Divisão : "));
-//     operacao = Number(num1 + num2);
-
-//     switch (opcao) {
-
-//         case 1:
-//             console.log(`A soma de ${num1} + ${num2} é igual ${operacao}`);
-//             break;
-
-//         case 2:
-//             operacaoSubtracao = Number(num1 - num2);
-//             console.log(`A subtração de ${num1} - ${num2} é igual ${operacaoSubtracao}`);
-//             break;
-
-//         case 3:
-//             operacaoMultiplicação = Number(num1 * num2);
-//             console.log(`A multiplicação de ${num1} x ${num2} é ${operacaoMultiplicação}`)
-//             break;
-
-//         case 4:
-//             operacaoDivisao = Number(num1 / num2);
-//             console.log(`A divisão de ${num1} / ${num2} é ${operacaoDivisao}`)
-//             break;
-
+ 
+//     if (num1 === undefined) {
+//         num1 = parseFloat(readline.question("Informe o primeiro número: "));
 //     }
 
-// }calculadora();
+//     if (num2 === undefined) {
+//         num2 = parseFloat(readline.question("Informe o segundo número: "));
+//     }
+
+//     if (operacao === undefined) {
+//         console.log("Escolha a operação:");
+//         console.log("1 - Soma");
+//         console.log("2 - Subtração");
+//         console.log("3 - Multiplicação");
+//         console.log("4 - Divisão");
+//         operacao = parseInt(readline.question("Opção: "));
+//     }
+
+//     switch (operacao) {
+//         case 1:
+//             console.log(`A soma de ${num1} + ${num2} é igual a ${num1 + num2}`);
+//             break;
+//         case 2:
+//             console.log(`A subtração de ${num1} - ${num2} é igual a ${num1 - num2}`);
+//             break;
+//         case 3:
+//             console.log(`A multiplicação de ${num1} x ${num2} é igual a ${num1 * num2}`);
+//             break;
+//         case 4:
+//             if (num2 === 0) {
+//                 console.log("Erro: Não é possível dividir por zero.");
+//             } else {
+//                 console.log(`A divisão de ${num1} / ${num2} é igual a ${num1 / num2}`);
+//             }
+//             break;
+//         default:
+//             console.log("Opção inválida.");
+//     }
+// }
+
+// calculadora();
+
 
 //Atv 3
 
@@ -77,34 +90,38 @@ const readline = require("readline-sync");
 
 //Atv 5
 
-// function mensagemPersonalizada(palavra = "Cachorro", estilo) {
+// function mensagemPersonalizada(texto, estilo = "normal") {
+//     let mensagemEstilizada = texto;
 
-//     palavra = readline.question("Digite uma palavra: ");
-//     estilo = readline.question("Escolha qual estilo você deseja personalizar sua palavra: 1 - Normal / 2 - Negrito / 3 - Itálico / 4 - Add na tag ou 5 - Risco: ")
-
-//     switch (estilo) {
-//         case 1:
-//             console.log(`A palavra digitada no estilo Normal => ${palavra}`)
+//     switch (estilo.toLowerCase()) {
+//         case "normal":
+//             // Nada precisa ser alterado para o estilo normal
 //             break;
-
-//         case 2:
-//             console.log(`A palavra digitada no estilo Negrito => ${palavra.bold()}`)
+//         case "negrito":
+//             mensagemEstilizada = mensagemEstilizada.bold();
 //             break;
-
-//         case 3:
-//             console.log(`A palavra digitada no estilo Itálico => ${palavra.italics()}`)
+//         case "itálico":
+//             mensagemEstilizada = mensagemEstilizada.italics();
 //             break;
-
-//         case 4:
-//             console.log(`A palavra digitada dentro de uma tag => ${palavra.blink()}`)
+//         case "tag":
+//             mensagemEstilizada = `<${mensagemEstilizada}>`;
 //             break;
-
-//         case 5:
-//             console.log(`A palavra digitada dentro de uma tag => ${palavra.strike()}`)
+//         case "risco":
+//             mensagemEstilizada = mensagemEstilizada.strike();
 //             break;
+//         default:
+//             console.log("Estilo inválido.");
+//             return;
 //     }
+
+//     console.log(mensagemEstilizada);
 // }
-// mensagemPersonalizada();
+
+// const texto = readline.question("Digite uma palavra: ");
+// const estilo = readline.question("Escolha um estilo: normal, negrito, itálico, tag ou risco: ");
+
+// mensagemPersonalizada(texto, estilo);
+
 
 //Exemplo =>
 
@@ -116,50 +133,52 @@ const readline = require("readline-sync");
 
 //Atv 1 - com  return
 
-// let somar = function numeros(num1, num2) {
-//     num1 = parseInt(readline.question("Informe um número: "))
-//     num2 = parseInt(readline.question("Informe outro número: "))
+// function somar(num1, num2) {
 //     return num1 + num2;
-// };
+// }
 
-// console.log(somar());
+// const numero1 = parseInt(readline.question("Informe o primeiro número: "));
+// const numero2 = parseInt(readline.question("Informe o segundo número: "));
+
+// const resultado = somar(numero1, numero2);
+// console.log(`A soma de ${numero1} + ${numero2} é igual a ${resultado}`);
+
 
 //Atv 2 ?
 
-// let infoPar = function ehPar(num1) {
-//     num1 = parseInt(readline.question("Informe um número: "))
-
-//     if (num1 % 2 == 0) {
-//         console.log(Boolean == true);
-//     } else {
-//         console.log(Boolean == false);
-//     }
-
+// function ehPar(num1) {
+//     return num1 % 2 === 0;
 // }
-// console.log(infoPar())
 
+// const numero = parseInt(readline.question("Informe um número: "));
+// const resultado = ehPar(numero);
+
+// console.log(resultado);
 
 //Atv 3 
 
-// let numeros = function maiorNumero(num1, num2, num3) {
-//     num1 = parseInt(readline.question("Informe um número: "));
-//     num2 = parseInt(readline.question("Informe outro número: "));
-//     num3 = parseInt(readline.question("Informe mais um número: "));
-
-//     return numeros = Math.max(num1, num2, num3);
+// function maiorNumero(num1, num2, num3) {
+//     return Math.max(num1, num2, num3);
 // }
-// console.log(numeros());
+
+// const numero1 = parseInt(readline.question("Informe o primeiro número: "));
+// const numero2 = parseInt(readline.question("Informe o segundo número: "));
+// const numero3 = parseInt(readline.question("Informe o terceiro número: "));
+
+// const resultado = maiorNumero(numero1, numero2, numero3);
+
+// console.log(`O maior número é: ${resultado}`);
 
 //Atv 4 ?
 
-let imc = function calcularIMC (peso, altura, pessoa) {
-
-    pessoa = readline.question("Informe seu nome: ");
-    peso = parseInt(readline.question("Informe seu peso: "));
-    altura = parseFloat(readline.question("Informe sua altura: "));
-    peso = (peso/(altura *2));
-   
-    return imc;
+function calcularIMC(peso, altura) {
+    return peso / (altura * altura);
 }
 
-console.log(imc(`${pessoa} seu IMc é ${peso}`));
+const pessoa = readline.question("Informe seu nome: ");
+const peso = parseFloat(readline.question("Informe seu peso em kg: "));
+const altura = parseFloat(readline.question("Informe sua altura em metros: "));
+
+const imcCalculado = calcularIMC(peso, altura);
+
+console.log(`${pessoa}, seu IMC é ${imcCalculado.toFixed(2)}`);
