@@ -61,11 +61,12 @@ try {
     let num1 = parseInt(readline.question[("Digite um numero: ")]);
     let num2 = parseInt(readline.question[("Digite outro numero: ")]);
     let num3 = parseInt(readline.question[("Digite mais um numero: ")]);
-    num = [num1, num2, n];
+    
+    // if (num === null) {
+    //     throw "Objeto Vazio";
+    // } 
 
-    if (num1 === null) {
-        throw "Objeto Vazio";
-    } 
+    console.log(num[num1]);
 
 } catch (error) {
     console.log("***Erro: Propriedade não encontrada***");
