@@ -46,10 +46,11 @@ const readline = require("readline-sync");
 
 function fibonacci(num) {
     if (num <= 1) return num;
-
     return fibonacci(num-1) + fibonacci(num-2);
 }
 
-numero = parseInt(readline.question("Informe até que número que você deseja saber o calculo de calcFibonacci: "));
+console.log(fibonacci(2));
 
-console.log(`O cálculo Fibonacci do número ${numero} é ${calcFibonacci(numero)}`);
+// numero = parseInt(readline.question("Informe até que número que você deseja saber o calculo de calcFibonacci: "));
+
+// console.log(`O cálculo Fibonacci do número ${numero} é ${calcFibonacci(numero)}`);
