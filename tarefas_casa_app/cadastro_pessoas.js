@@ -1,12 +1,11 @@
 function cadastrarPessoa(nome, idade, salario, possuiDiploma) {
 
-    // Verificando se os tipos de entrada são válidos
+
     if (typeof nome !== 'string' || typeof idade !== 'number' || typeof salario !== 'number' || typeof possuiDiploma !== 'boolean') {
         console.log("*** Tipos de entrada inválidos.***");
         return;
     }
 
-    // Criando um objeto para armazenar os dados da pessoa
     const pessoa = {
         nome: nome,
         idade: idade,
@@ -14,7 +13,6 @@ function cadastrarPessoa(nome, idade, salario, possuiDiploma) {
         possuiDiploma: possuiDiploma
     };
 
-    // Retornando o objeto pessoa
     return pessoa;
 }
 
