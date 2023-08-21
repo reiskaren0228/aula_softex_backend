@@ -1,3 +1,5 @@
+npm install prompt-sync //comando instalação
+
 const prompt = require("prompt-sync")();
 
 let nome = prompt("Informe seu nome: ")
