@@ -105,22 +105,39 @@ const usuarios = [
 
 //Atv 4
 
-const estudantes = [
-    {nome : "Alice", idade: 18},
-    {nome : "Bob", idade: 20},
-    {nome : "Carol", idade: 19},
-    {nome : "David", idade: 21},
-]
+// const estudantes = [
+//     {nome : "Alice", idade: 18},
+//     {nome : "Bob", idade: 20},
+//     {nome : "Carol", idade: 19},
+//     {nome : "David", idade: 21},
+// ]
 
-let idadeMaior = [];
+// let idadeMaior = [];
 
-for (i= 0; i < estudantes.length; i++) {
+// for (i= 0; i < estudantes.length; i++) {
 
-    if (estudantes[i].idade >= 19) {
-        idadeMaior.push(estudantes[i])       
-    } else {
-        console.log("Não existe alunos com essa idade");
+//     if (estudantes[i].idade >= 19) {
+//         idadeMaior.push(estudantes[i])       
+//     } else {
+//         console.log("Não existe alunos com essa idade");
+//     }
+// }
+
+// console.log(idadeMaior);
+
+//Atv 5
+
+const pontos = [
+    [2, 5, 8],
+    [3, 9, 12],
+    [4, 6, 10]
+];
+
+for (let i = 0; i < pontos.length; i++) {
+    var sum = 0;
+
+    for (const i in pontos) {
+        sum += pontos[i];
+        console.log(sum);
     }
 }
-
-console.log(idadeMaior);
