@@ -21,55 +21,59 @@ const readline = require("readline-sync");
 //     let num1 = parseInt(readline.question("Digite um numero: "));
 //     let num2 = parseInt(readline.question("Digite outro numero: "));
 
-//     div = Number(num1 / num2);
-
-//     if (num2 === 0 || num1 === 0) {
-//         throw "erro"
+//     if (num2 === 0) {
+//         throw "Divisão por zero";
 //     }
 
-//     console.log("O resultado da divisao dos números é ", div);
+//     let div = num1 / num2;
+
+//     console.log("O resultado da divisao dos números é", div);
 // } catch (erro) {
-
-//     console.error("[***Erro: Divisão por zero***]");
-//     console.log("O número informado é  '0' e ele não é divisível por nenhum Número");
-
+//     if (erro === "Divisão por zero") {
+//         console.error("Erro:", erro);
+//         console.log("O número informado para a divisão é 0 e a divisão por zero não é permitida.");
+//     } else {
+//         console.error("Erro desconhecido:", erro);
+//     }
 // } finally {
-//     console.log("Funcionando")
+//     console.log("Funcionando");
 // }
 
 //Atv 2 ?
 
-// try {
 
+// try {
 //     num = parseInt(readline.question("Digite um número: "));
 
-//     if (num != Number) {
-//         throw "Valor não é um número"
-//     };
-
+//     if (isNaN(num)) {
+//         throw "Valor não é um número";
+//     }
 // } catch (error) {
-
-//         console.log("***Erro: Conversão Inválida***");
-
+//     console.log("***Erro:", error, " *** Conversão Inválida ***");
 // } finally {
 //     console.log("funcionando");
 // }
 
+
 //Atv 3
 
-try {
-    let num1 = parseInt(readline.question[("Digite um numero: ")]);
-    let num2 = parseInt(readline.question[("Digite outro numero: ")]);
-    let num3 = parseInt(readline.question[("Digite mais um numero: ")]);
-    
-    // if (num === null) {
-    //     throw "Objeto Vazio";
-    // } 
+// try {
+//     let num1 = parseInt(readline.question("Digite um numero: "));
+//     let num2 = parseInt(readline.question("Digite outro numero: "));
+//     let num3 = parseInt(readline.question("Digite mais um numero: "));
 
-    console.log(num[num1]);
+//     let num = {};  
 
-} catch (error) {
-    console.log("***Erro: Propriedade não encontrada***");
-} finally {
-    console.log("Código funcionando");
+//     if (Object.keys(num).length === 0) {
+//         throw "Objeto Vazio";
+//     }
+
+//     console.log(num.propriedadeInexistente);  //forçar o erro
+
+// } catch (error) {
+//     console.log("***Erro:", error, "***");
+// } finally {
+//     console.log("Código funcionando");
 }
+
+
