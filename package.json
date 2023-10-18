@@ -1,5 +1,17 @@
 {
   "dependencies": {
     "readline-sync": "^1.4.10"
-  }
+  },
+  "name": "aula_softex_backend",
+  "description": "repositório para teste do curso da softex",
+  "version": "1.0.0",
+  "main": "aula_01_08.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
