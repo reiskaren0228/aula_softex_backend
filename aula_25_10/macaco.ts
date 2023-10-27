@@ -15,3 +15,12 @@ class Macaco implements IMacaco {
     }
 }
 
+function pula() {
+    const macaco: IMacaco= new Macaco('Mamifero', 'King Kong', 3, 'Grande', true);
+    macaco.interageVisita();
+    
+}
+
+pula();
+
+

@@ -16,3 +16,10 @@ class Girafa implements IGirafa {
 }
 
 
+function pescocoGrande() {
+    const girafa: IGirafa = new Girafa('Mamífero', 'Pescoçudo', 23, 'Grande', true);
+    girafa.interageVisita();
+
+}
+
+pescocoGrande();

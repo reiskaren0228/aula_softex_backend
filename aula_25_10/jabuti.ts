@@ -15,3 +15,10 @@ class Jabuti implements IJabuti {
     }
 }
 
+function casco() {
+    const jabuti: IJabuti= new Jabuti('Réptil', 'Corre', 55, 'Médio', true);
+    jabuti.interageVisita();
+    
+}
+
+casco();

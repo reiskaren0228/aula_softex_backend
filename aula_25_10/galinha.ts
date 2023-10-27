@@ -3,7 +3,7 @@ import { IAnimal } from "./animal";
 
 export interface IGalinha extends IAnimal {
     qtdPatas: number;
-    interageVisita(): void; 
+    interageVisita(): void;
 }
 
 class Galinha implements galinha.IGalinha {
@@ -18,6 +18,10 @@ class Galinha implements galinha.IGalinha {
 function patas(): void {
     const galinha: galinha.IGalinha = new Galinha('Ave', 'Cocoricó', 3, 'Pequeno', 2);
     galinha.interageVisita();
+
 }
 
 patas();
+
+
+
