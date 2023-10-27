@@ -2,18 +2,8 @@ import { IAnimal } from "./animal";
 import { IGalinha } from "./galinha";
 
 export interface ITubarao extends IGalinha {
+    iscaViva: any;
     aquatico: boolean;
-}
-
-function nada() {
-    const tubarao: ITubarao = {
-        tipo: 'Peixe',
-        nome: 'Shark',
-        idade: 9,
-        porte: 'Grande',
-        qtdPatas: 0,
-        aquatico: true,
-    }
 }
 
 class Tubarao implements ITubarao {
@@ -35,4 +25,8 @@ function nada() {
     tubarao.iscaViva();
 }
 
+
 nada();
+
+
+
