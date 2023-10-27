@@ -16,20 +16,23 @@ function nada() {
     }
 }
 
-class interageVisita implements IGalinha {
+class Tubarao implements ITubarao {
     constructor(public tipo: string, public nome: string, public idade: number, public porte: string, public qtdPatas: number, public aquatico: boolean) {
-        console.log(` O tubarão ${nome} é dócil quando bem alimentado, caso contrário não é recomendado o contato`);
+    }
 
+    iscaViva() {
+        console.log(`O tubarão ${this.nome} se alimenta de peixes vivos diariamente`);
+    }
+
+    interageVisita() {
+        console.log(`O tubarão ${this.nome} é dócil quando bem alimentado, caso contrário não é recomendado o contato`);
     }
 }
 
-galinha.interageVisita();
-
-class iscaViva implements IAnimal {
-    constructor(public tipo: string, public nome: string, public idade: number, public porte: string, public qtdPatas: number, public aquatico: boolean) {
-        console.log(` O ${nome} se alimenta de peixes vivos diaramente`);
-
-    }
+function nada() {
+    const tubarao: ITubarao = new Tubarao('Peixe', 'Shark', 9, 'Grande', 0, true);
+    tubarao.interageVisita();
+    tubarao.iscaViva();
 }
 
-tubarao.iscaViva();
+nada();
